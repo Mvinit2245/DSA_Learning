@@ -1,15 +1,26 @@
+import java.util.*;
+
+
+
 public class LinkedListEx {
     public static void main(String[] args) {
-        Node node = new Node(0);
-        System.out.println(node.data);
-   
-   }
+       Node head1 = new Node(0);
+        head1.next = new Node(1);
+        head1.next.next = new Node(2); 
+        
+    
+         Node current = head1;
+          while(current != null) {
+             System.out.println(current.data);
+             current = current.next;
+            }
 
 }
 
-class Node{
+ public static class Node{
     int data;
    Node next;
+   
 
    Node(int data1, Node next1){
     this.data= data1;
@@ -20,4 +31,9 @@ class Node{
     this.data= data1;
     this.next= null;
    }
+
+   
+}
+
+   
 }

@@ -8,6 +8,7 @@ public class LinkedListEx {
         head1.next = new Node(1);
         head1.next.next = new Node(2); 
         
+        
     
          Node current = head1;
           while(current != null) {
@@ -37,3 +38,13 @@ public class LinkedListEx {
 
    
 }
+
+// For adding new at first position
+// public static Node insertNode(Node head, int val){
+//     return new Node(val, head);
+
+//     Node temp = new Node(data);
+//     temp.next = head;
+//     head = temp;
+//     return head;
+// }
